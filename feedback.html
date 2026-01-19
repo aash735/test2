@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Community | Unexplored India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🇮🇳</span>
+                <span>Unexplored India</span>
+            </a>
+            
+            <button class="mobile-menu-btn">☰</button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore Places</a></li>
+                <li><a href="vision.html">Vision & Mission</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+                <li><a href="#contact" class="btn">Share Knowledge</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Community Feedback</h1>
+            <p class="tagline">Your insights help us document and preserve India's hidden heritage</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="feedback-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Community Voices</h2>
+                <p>Unexplored India is built through collaboration with historians, travelers, researchers, and heritage enthusiasts</p>
+            </div>
+            
+            <div class="testimonials">
+                <!-- Testimonial 1: History Student -->
+                <div class="testimonial-card fade-in">
+                    <div class="star-rating" data-stars="5"></div>
+                    <p>"As a history student specializing in medieval India, I've found Unexplored India to be an invaluable resource. The documentation of lesser-known sites like Lodhi Fort provides crucial primary information that isn't available in standard textbooks. The balanced approach to historical facts without sensationalism is particularly appreciated."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>PhD Candidate, Medieval Indian History<br>Jawaharlal Nehru University</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2: Traveler -->
+                <div class="testimonial-card fade-in">
+                    <div class="star-rating" data-stars="4"></div>
+                    <p>"I've been traveling across India for 15 years, and Unexplored India introduced me to sites I never knew existed. The detailed information about Khatkar Kalan helped me plan a meaningful visit to Bhagat Singh's ancestral village. The respectful presentation of Jallianwala Bagh information shows the team's sensitivity toward solemn historical sites."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div>
+                            <h4>Rajesh Kumar</h4>
+                            <p>Heritage Traveler & Photographer<br>Bangalore, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3: Researcher -->
+                <div class="testimonial-card fade-in">
+                    <div class="star-rating" data-stars="5"></div>
+                    <p>"Our archaeological survey team has collaborated with Unexplored India on documenting several sites in Punjab. Their methodology combines rigorous research with accessible storytelling. The digital preservation of architectural details through high-quality photography creates an important archive for future research."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div>
+                            <h4>Dr. Anjali Mehta</h4>
+                            <p>Archaeological Survey of India<br>Punjab Circle</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4: Local Community Member -->
+                <div class="testimonial-card fade-in">
+                    <div class="star-rating" data-stars="5"></div>
+                    <p>"My family has lived near Phillaur Fort for generations. Unexplored India's team consulted with local elders and verified folk stories with historical records. Their representation of our local heritage is accurate and respectful. The platform has brought attention to conservation needs we've been advocating for years."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SG</div>
+                        <div>
+                            <h4>Simranjeet Gill</h4>
+                            <p>Community Historian<br>Phillaur, Punjab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback-section" style="background-color: var(--light-grey);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Share Your Knowledge</h2>
+                <p>Contribute to India's largest heritage database by sharing information, corrections, or suggestions</p>
+            </div>
+            
+            <div class="feedback-form fade-in">
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Your Connection to Heritage</label>
+                        <select id="category" name="category" class="form-control">
+                            <option value="">Select an option</option>
+                            <option value="historian">Historian/Researcher</option>
+                            <option value="traveler">Traveler/Photographer</option>
+                            <option value="local">Local Community Member</option>
+                            <option value="student">Student</option>
+                            <option value="conservation">Conservation Professional</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" class="form-control" required>
+                            <option value="">What would you like to share?</option>
+                            <option value="new-site">Information about a new heritage site</option>
+                            <option value="correction">Correction to existing information</option>
+                            <option value="suggestion">Website improvement suggestion</option>
+                            <option value="collaboration">Collaboration/Partnership inquiry</option>
+                            <option value="feedback">General feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" class="form-control" required placeholder="Please provide detailed information about the heritage site, including location, historical significance, current condition, and any sources you may have. For corrections, please specify exactly what needs to be changed and why."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>How would you rate our platform?</label>
+                        <div style="display: flex; gap: 10px; margin-top: 10px;">
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="rating" value="5"> ★★★★★ Excellent
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="rating" value="4"> ★★★★ Good
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="rating" value="3"> ★★★ Average
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 10px;">
+                            <input type="checkbox" required>
+                            <span>I agree to the responsible use of this information for heritage documentation purposes</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">
+                        <i class="fas fa-paper-plane" style="margin-right: 10px;"></i> Submit Feedback
+                    </button>
+                    
+                    <p style="margin-top: var(--space-sm); font-size: 0.9rem; color: var(--aged-stone); text-align: center;">
+                        All submissions are reviewed by our research team. We may contact you for verification or additional information.
+                    </p>
+                </form>
+            </div>
+            
+            <div class="fade-in" style="margin-top: var(--space-xl); text-align: center;">
+                <h3>Other Ways to Contribute</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-md); margin-top: var(--space-md);">
+                    <div style="padding: var(--space-md); background: var(--white); border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                        <h4><i class="fas fa-camera" style="color: var(--forest-green);"></i> Share Photos</h4>
+                        <p>Submit high-quality photographs of lesser-known heritage sites with proper attribution and location details.</p>
+                    </div>
+                    
+                    <div style="padding: var(--space-md); background: var(--white); border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                        <h4><i class="fas fa-book" style="color: var(--deep-navy);"></i> Research Collaboration</h4>
+                        <p>Academic researchers and historians can collaborate on documenting specific regions or historical periods.</p>
+                    </div>
+                    
+                    <div style="padding: var(--space-md); background: var(--white); border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                        <h4><i class="fas fa-hands-helping" style="color: var(--muted-saffron);"></i> Volunteer</h4>
+                        <p>Join our volunteer program for field documentation, translation, or community outreach activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Unexplored India</h3>
+                    <p>A community-driven initiative to document and preserve India's hidden heritage through collaborative knowledge sharing.</p>
+                    <p style="margin-top: var(--space-sm); font-style: italic;">"History is not just about kings and battles, but about places, people, and memories."</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Our Team</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> research@unexploredindia.org</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210 (Research Team)</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                        <li><i class="fas fa-clock"></i> Response time: 3-5 business days</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.html">Explore Database</a></li>
+                        <li><a href="vision.html">Our Methodology</a></li>
+                        <li><a href="#contact">Contribution Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Unexplored India. Community contributions are licensed under CC BY-NC-SA 4.0 for heritage preservation purposes.</p>
+                <p style="margin-top: var(--space-xs);">Verified historical information. Respectful cultural representation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
