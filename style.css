@@ -141,6 +141,22 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+/* Add this to style.css */
+
+.logo img {
+    height: 40px;        /* Limits the height so it doesn't stretch the header */
+    width: auto;         /* Keeps the image not distorted */
+    object-fit: contain; /* Ensures the whole logo is visible */
+    border-radius: 4px;  /* Optional: adds slightly rounded corners */
+}
+
+/* Update the existing .logo class to ensure vertical alignment */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically centers the image with the text */
+    gap: 12px;           /* Space between the image and the text */
+    /* ... keep your other existing logo styles ... */
+}
 
 .logo {
     font-family: var(--serif);
