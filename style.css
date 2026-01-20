@@ -1023,3 +1023,8 @@ footer {
 .jallianwala h6 {
     color: #ffffff;
 }
+/* Add this to style.css - Force Jallianwala icon color */
+.jallianwala .place-icon i,
+.place-section.dark-bg .place-icon i {
+    color: var(--muted-saffron) !important;
+}
